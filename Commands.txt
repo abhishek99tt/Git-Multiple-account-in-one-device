@@ -1,0 +1,14 @@
+Configuration for more than one account in github in one machine 
+
+
+ssh key generation (Run this command in  ~/.ssh)
+______________________________________
+ssh-keygen -t ed25519 -C "your_email@example.com"  -  Paste this key to your github (ssh key)
+
+
+ssh config file
+______________________________
+Host abhishek github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_ed25519_Abhishek.pub(path)
